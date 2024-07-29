@@ -5,6 +5,7 @@ The Back Office Management 2 User Acceptance Tests (BOM 2 UATs) act as a reposit
 
 <details>
 <summary>Installing</summary>
+   
 ## Installing
 
 ### Prerequisites
@@ -44,7 +45,7 @@ To simplify the test automation phase, we have established common actions to ass
 ## Test
 
 Here, we will explore how to set up test automation code with Cypress for end-to-end (E2E) testing in BOM2.
-![setup](Desktop_screenshot_(11).png) \
+![setup](https://github.com/user-attachments/assets/8e9cb827-b045-495e-af98-e483795517fc) \
 In the picture above, we see that to create a test suite, we need to create a new directory in the `e2e/tests` directory with the name of the test suite. Inside this directory, we can create a test file that should always end with the `.cy.js` extension. 
 To write test here we have several steps to follow:
 ### Describe
@@ -53,15 +54,15 @@ and organize test cases related to the feature of the application that we are te
 can define multiple test cases using `it` blocks to test different scenarios related to the
 functionality that you are testing. This helps in structuring and categorizing the tests for better readability and
 organization.
-![describe](Desktop_screenshot_(12).png)
+![describe](https://github.com/user-attachments/assets/24b1218c-50fe-40a2-a1fd-c5c1b385a30d)
 ### Before
 This block is used to run setup code before any of the test
 cases within the `describe` block are executed. In our case, we use it to load our test data and user data.
-![before](Desktop_screenshot_(13).png)
+![before](https://github.com/user-attachments/assets/d6fb528a-ff55-4ca2-b435-7bdec600ca19)
 ### `it` Block
 The `it()` function is used to define an individual test case and is typically placed inside a `describe()` block, which groups related tests together. Each `it()` block runs in isolation, ensuring that the application state is reset between tests, so they do not affect one another. Using multiple `it()` blocks enhances readability and maintainability by focusing on one functionality or scenario at a time. \
 In our case, one or more it() blocks can refer to the acceptance criteria of an user story.
-![it](Desktop_screenshot_(14).png)
+![it](https://github.com/user-attachments/assets/0c667438-c1e2-43d5-a2bd-efd30815d495)
 
 ### `it.skip()`
 In Cypress, `it.skip()` is used to temporarily skip a specific test case without removing it from the codebase. This is particularly useful during development or debugging when you want to focus on other tests without executing a particular one.This feature helps maintain test organization and can be beneficial when dealing with flaky tests or when a feature is under development.
