@@ -31,7 +31,7 @@ To run our uats we need to install several tools depending on our OS:
 
 ## Actions
 
-To simplify the test automation phase, we have established common actions to assist testers in performing repetitive tasks without needing to write the entire Cypress code. We have three main JavaScript files for our common actions:  <br/>
+To simplify the test automation phase, we have established common actions to assist testers in performing repetitive tasks without needing to write the entire Cypress code. We have three main JavaScript files for our common actions:  \
 ![actions](https://github.com/user-attachments/assets/776b02a9-eaf6-42dc-8049-28f382565b85) 
 1) `CommonActions.js` is a JavaScript class that provides a wide range of reusable functions for interacting with web elements and performing common actions in our E2E testing, along with utility functions for data manipulation.
 2) `CommonServices.js` is a JavaScript class that includes a method for generating an access token using the provided username, password, and grant type to authenticate properly on the BOM2 platform.
@@ -97,12 +97,15 @@ fixtures are used to manage and load external data for testing purposes, typical
 ## Pages
 
 This folder contains classes for the web pages being tested. Each class includes web element identifiers and action methods for interacting with the elements on the page, based on common actions. \
+
 ![pages](https://github.com/user-attachments/assets/800e8626-733e-4ef5-92c0-5d90915525c2)
 
 1) **in Red** we have different pages (classes) along with their identifiers and methods
 2) **in Yellow** we have the structure of a << page >> with identifiers organized by page section.
-3) Below is the structure of an action method for a page, which clicks on the profile icon on the home page.
+3) Below is the structure of an action method for a page, which clicks on the profile icon on the home page. \
+   
    ![action](https://github.com/user-attachments/assets/02b5c7b8-9f42-4550-a7e9-0a48ef894bd3)
+   
 </details>
 
 <details>
@@ -154,7 +157,7 @@ Then, begin the end-to-end (E2E) testing by selecting the specifications in whic
 <img alt="spec" height="520" src="https://github.com/user-attachments/assets/6869c50f-ab48-482e-aedd-a950f60f2a68" width="520"/> \
 We have the test runner interface with annotations displayed here.
 
-![annotate](Desktop_screenshot_(4).png)
+![annotate](https://github.com/user-attachments/assets/3fa8b41f-5019-42e1-b00f-02335683442d)
 
 1) **Test Specs:** we can see the test suites and their corresponding test files here.
 2) **Tests cases:** here, we have the different test cases along with their statuses after running the automated tests.
