@@ -96,13 +96,13 @@ fixtures are used to manage and load external data for testing purposes, typical
 
 ## Pages
 
-This folder contains classes for the web pages being tested. Each class includes web element identifiers and action methods for interacting with the elements on the page, based on common actions.
-![pages](Desktop_screenshot_(7).png)
+This folder contains classes for the web pages being tested. Each class includes web element identifiers and action methods for interacting with the elements on the page, based on common actions. \
+![pages](https://github.com/user-attachments/assets/800e8626-733e-4ef5-92c0-5d90915525c2)
 
 1) **in Red** we have different pages (classes) along with their identifiers and methods
 2) **in Yellow** we have the structure of a << page >> with identifiers organized by page section.
 3) Below is the structure of an action method for a page, which clicks on the profile icon on the home page.
-   ![action](https://github.com/user-attachments/assets/ccc38d0e-47a3-4597-be61-e606df30009e)
+   ![action](https://github.com/user-attachments/assets/02b5c7b8-9f42-4550-a7e9-0a48ef894bd3)
 </details>
 
 <details>
