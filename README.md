@@ -72,11 +72,17 @@ In Cypress, test tags are used to categorize and organize tests based on their p
 
 3) `<regression>` tests are designed to confirm that previously developed and tested features still work after changes, such as enhancements or bug fixes, have been made to the codebase. They help identify any unintended side effects caused by recent updates.
 
+<details>
+<summary>Fixtures</summary>
+
 ## Fixtures
 {collapsible="true" default-state="collapsed"}
 
 fixtures are used to manage and load external data for testing purposes, typically stored in JSON or Javascript files. By utilizing the `cy.fixture()` command, we can easily load this data into our tests, allowing for better organization and reusability of test data. This is particularly useful for specific data such as expectation data, templates (e.g., Bulk Payment XLS files), external data (media, documents, proofs), mocked API responses, user data for different test environments, and more, without requiring live interactions (e.g., database access or human actions).
-![fixtures](Desktop_screenshot_(15).png)
+![fixtures](https://github.com/user-attachments/assets/87e98d95-0b21-4065-9a72-595cfea5141f)
+</details>
+
+
 ## Pages
 {collapsible="true" default-state="collapsed"}
 
