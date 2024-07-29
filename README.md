@@ -23,7 +23,7 @@ To run our uats we need to install several tools depending on our OS:
 5) Verify that everything functions correctly by opening Cypress with the command `npx cypress open`. 
 6) Ensure that windows similar to the one shown in the image below appear.
 
-![as]("https://github.com/user-attachments/assets/fb203557-dcd1-4088-bc78-b77eb82644fe")
+![as](https://github.com/user-attachments/assets/fb203557-dcd1-4088-bc78-b77eb82644fe)
 
 </details>
 
