@@ -31,8 +31,8 @@ To run our uats we need to install several tools depending on our OS:
 
 ## Actions
 
-To simplify the test automation phase, we have established common actions to assist testers in performing repetitive tasks without needing to write the entire Cypress code. We have three main JavaScript files for our common actions: \
-![actions](https://github.com/user-attachments/assets/c9cd4e6c-efb3-4930-b821-9f55c98748c9) 
+To simplify the test automation phase, we have established common actions to assist testers in performing repetitive tasks without needing to write the entire Cypress code. We have three main JavaScript files for our common actions:  <br/>
+![actions](https://github.com/user-attachments/assets/776b02a9-eaf6-42dc-8049-28f382565b85) 
 1) `CommonActions.js` is a JavaScript class that provides a wide range of reusable functions for interacting with web elements and performing common actions in our E2E testing, along with utility functions for data manipulation.
 2) `CommonServices.js` is a JavaScript class that includes a method for generating an access token using the provided username, password, and grant type to authenticate properly on the BOM2 platform.
 3) `HttpActions.js` this class provides methods for sending HTTP requests (GET, POST, PUT, PATCH, DELETE) and asserting their responses in tests. Each method requires the endpoint URL, optional headers, and request data for certain request types. It utilizes Cypress's cy.request() to send requests and asserts the response status code, returning the response object for further processing. These methods are essential for making HTTP requests and verifying responses in end-to-end tests, ensuring data integrity.
