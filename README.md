@@ -23,7 +23,7 @@ To run our uats we need to install several tools depending on our OS:
 5) Verify that everything is functioning correctly by opening Cypress with the command `npx cypress open`. 
 6) Ensure that windows similar to the one shown in the image below appear.
 
-   <img alt="cypress" height="520" src="Desktop_screenshot.png" width="520"/>
+   <img alt="cypress" height="520" src="https://github.com/user-attachments/assets/5500ba19-7488-476b-8102-221" width="520"/>
 </details>
 
 <details>
@@ -32,7 +32,7 @@ To run our uats we need to install several tools depending on our OS:
 ## Actions
 
 To simplify the test automation phase, we have established common actions to assist testers in performing repetitive tasks without needing to write the entire Cypress code. We have three main JavaScript files for our common actions: \
-![actions](Desktop_screenshot_(5).png) 
+![actions](https://github.com/user-attachments/assets/c9cd4e6c-efb3-4930-b821-9f55c98748c9) 
 1) `CommonActions.js` is a JavaScript class that provides a wide range of reusable functions for interacting with web elements and performing common actions in our E2E testing, along with utility functions for data manipulation.
 2) `CommonServices.js` is a JavaScript class that includes a method for generating an access token using the provided username, password, and grant type to authenticate properly on the BOM2 platform.
 3) `HttpActions.js` this class provides methods for sending HTTP requests (GET, POST, PUT, PATCH, DELETE) and asserting their responses in tests. Each method requires the endpoint URL, optional headers, and request data for certain request types. It utilizes Cypress's cy.request() to send requests and asserts the response status code, returning the response object for further processing. These methods are essential for making HTTP requests and verifying responses in end-to-end tests, ensuring data integrity.
@@ -102,7 +102,7 @@ This folder contains classes for the web pages being tested. Each class includes
 1) **in Red** we have different pages (classes) along with their identifiers and methods
 2) **in Yellow** we have the structure of a << page >> with identifiers organized by page section.
 3) Below is the structure of an action method for a page, which clicks on the profile icon on the home page.
-   ![action](Desktop_screenshot_(9).png)
+   ![action](https://github.com/user-attachments/assets/ccc38d0e-47a3-4597-be61-e606df30009e)
 </details>
 
 <details>
@@ -140,7 +140,7 @@ Here we could run the tests in two different ways: in a **_console_** or in a **
 ### Console
 To run a suite of e2e tests in console just run `npx cypress run --spec cypress/e2e/tests/suite_name`
 
-   <img alt="console_test" height="520" src="Desktop_screenshot_(1).png" width="520"/> \
+   <img alt="console_test" height="520" src="https://github.com/user-attachments/assets/6869c50f-ab48-482e-aedd-a950f60f2a68" width="520"/> \
 to run a specific test in a suite, run `npx cypress run --spec cypress/e2e/tests/suite_name/test_file_name.cy.js`    
 
 Running tests in the console will perform end-to-end (E2E) testing of the specified tests in a browser and display results in screenshots in the event of failing tests, without opening any specific windows.
@@ -148,10 +148,10 @@ Running tests in the console will perform end-to-end (E2E) testing of the specif
 ### Browser interface
 To run our test in browser interface, we should first of all open cypress interface by running `npx cypress open` \
 then on the interface select **E2E Testing**, after that select the browser in wich you want to perform your e2e tests like in the picture below. \
-<img alt="broswer" height="520" src="Desktop_screenshot_(2).png" width="520"/> \
+<img alt="broswer" height="https://github.com/user-attachments/assets/5500ba19-7488-476b-8102-221" width="520"/> \
 Then, begin the end-to-end (E2E) testing by selecting the specifications in which you want to conduct your tests.
 
-<img alt="spec" height="520" src="Desktop_screenshot_(3).png" width="520"/> \
+<img alt="spec" height="520" src="https://github.com/user-attachments/assets/c9cd4e6c-efb3-4930-b821-9f55c98748c9" width="520"/> \
 We have the test runner interface with annotations displayed here.
 
 ![annotate](Desktop_screenshot_(4).png)
