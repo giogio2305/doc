@@ -114,7 +114,7 @@ This folder contains classes for the web pages being tested. Each class includes
 ## Support
 
 It provides a variety of useful modules for common test actions, such as adjusting the viewport, changing the test environment, and logging into BOM 2 based on the user role, among others.
-<img alt="support" height="240" src="Desktop_screenshot_(10).png" width="240"/>
+<img alt="support" height="240" src="https://github.com/user-attachments/assets/19a1cdc8-d29b-4e06-8a29-d15d29fdb1d8" width="240"/>
 Refering to the caption below, we have in our project  four support modules:
 
 1) `command.js` is defining custom Cypress commands for a test automation script, such as: 
@@ -151,7 +151,7 @@ Running tests in the console will perform end-to-end (E2E) testing of the specif
 ### Browser interface
 To run our test in browser interface, we should first of all open cypress interface by running `npx cypress open` \
 then on the interface select **E2E Testing**, after that select the browser in wich you want to perform your e2e tests like in the picture below. \
-<img alt="broswer" height="https://github.com/user-attachments/assets/5500ba19-7488-476b-8102-221" width="520"/> \
+<img alt="broswer" height="https://github.com/user-attachments/assets/6869c50f-ab48-482e-aedd-a950f60f2a68" width="520"/> \
 Then, begin the end-to-end (E2E) testing by selecting the specifications in which you want to conduct your tests.
 
 <img alt="spec" height="520" src="https://github.com/user-attachments/assets/6869c50f-ab48-482e-aedd-a950f60f2a68" width="520"/> \
