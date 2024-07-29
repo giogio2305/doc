@@ -20,10 +20,10 @@ To run our uats we need to install several tools depending on our OS:
 2) Checkout a new branch with `git checkout -b <branch name>`
 3) Pull the latest version of the code with `git pull origin develop`
 4) Install all the dependencies within the bom2_uat directory with `npm install`
-5) Verify that everything is functioning correctly by opening Cypress with the command `npx cypress open`. 
+5) Verify that everything functions correctly by opening Cypress with the command `npx cypress open`. 
 6) Ensure that windows similar to the one shown in the image below appear.
 
-![as]("https://github.com/user-attachments/assets/ccc38d0e-47a3-4597-be61-e606df30009e")
+![as]("https://github.com/user-attachments/assets/fb203557-dcd1-4088-bc78-b77eb82644fe")
 
 </details>
 
