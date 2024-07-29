@@ -2,8 +2,10 @@
 ## Introduction
 The Back Office Management 2 User Acceptance Tests (BOM 2 UATs) act as a repository for automated end-to-end tests of Smobilpay products within BOM 2, focusing on QA-level regression and smoke testing. These tests are executed daily through a Jenkins pipeline and can be accessed in the Allure report on the Docker server.
 
+
+<details>
+<summary>Installing</summary>
 ## Installing
-{collapsible="true" default-state="collapsed"}
 
 ### Prerequisites
 To run our uats we need to install several tools depending on our OS:
@@ -21,9 +23,12 @@ To run our uats we need to install several tools depending on our OS:
 6) Ensure that windows similar to the one shown in the image below appear.
 
    <img alt="cypress" height="520" src="Desktop_screenshot.png" width="520"/>
+</details>
+
+<details>
+<summary>Actions</summary>
 
 ## Actions
-{collapsible="true" default-state="collapsed"}
 
 To simplify the test automation phase, we have established common actions to assist testers in performing repetitive tasks without needing to write the entire Cypress code. We have three main JavaScript files for our common actions: \
 ![actions](Desktop_screenshot_(5).png) 
@@ -31,9 +36,12 @@ To simplify the test automation phase, we have established common actions to ass
 2) `CommonServices.js` is a JavaScript class that includes a method for generating an access token using the provided username, password, and grant type to authenticate properly on the BOM2 platform.
 3) `HttpActions.js` this class provides methods for sending HTTP requests (GET, POST, PUT, PATCH, DELETE) and asserting their responses in tests. Each method requires the endpoint URL, optional headers, and request data for certain request types. It utilizes Cypress's cy.request() to send requests and asserts the response status code, returning the response object for further processing. These methods are essential for making HTTP requests and verifying responses in end-to-end tests, ensuring data integrity.
 
+</details>
 
+<details>
+<summary>Test</summary>
+   
 ## Test
-{collapsible="true" default-state="collapsed"}
 
 Here, we will explore how to set up test automation code with Cypress for end-to-end (E2E) testing in BOM2.
 ![setup](Desktop_screenshot_(11).png) \
@@ -71,20 +79,21 @@ In Cypress, test tags are used to categorize and organize tests based on their p
 2) `<sanity>` tests are focused on verifying specific functionalities after changes have been made, such as bug fixes or new feature implementations. They ensure that the particular areas of the application impacted by the changes are functioning as expected without performing exhaustive testing.
 
 3) `<regression>` tests are designed to confirm that previously developed and tested features still work after changes, such as enhancements or bug fixes, have been made to the codebase. They help identify any unintended side effects caused by recent updates.
+</details>
 
 <details>
 <summary>Fixtures</summary>
 
 ## Fixtures
-{collapsible="true" default-state="collapsed"}
 
 fixtures are used to manage and load external data for testing purposes, typically stored in JSON or Javascript files. By utilizing the `cy.fixture()` command, we can easily load this data into our tests, allowing for better organization and reusability of test data. This is particularly useful for specific data such as expectation data, templates (e.g., Bulk Payment XLS files), external data (media, documents, proofs), mocked API responses, user data for different test environments, and more, without requiring live interactions (e.g., database access or human actions).
 ![fixtures](https://github.com/user-attachments/assets/87e98d95-0b21-4065-9a72-595cfea5141f)
 </details>
 
+<details>
+<summary>Pages</summary>
 
 ## Pages
-{collapsible="true" default-state="collapsed"}
 
 This folder contains classes for the web pages being tested. Each class includes web element identifiers and action methods for interacting with the elements on the page, based on common actions.
 ![pages](Desktop_screenshot_(7).png)
@@ -93,9 +102,12 @@ This folder contains classes for the web pages being tested. Each class includes
 2) **in Yellow** we have the structure of a << page >> with identifiers organized by page section.
 3) Below is the structure of an action method for a page, which clicks on the profile icon on the home page.
    ![action](Desktop_screenshot_(9).png)
+</details>
 
+<details>
+<summary>Support</summary>
+   
 ## Support
-{collapsible="true" default-state="collapsed"}
 
 It provides a variety of useful modules for common test actions, such as adjusting the viewport, changing the test environment, and logging into BOM 2 based on the user role, among others.
 <img alt="support" height="240" src="Desktop_screenshot_(10).png" width="240"/>
@@ -115,6 +127,7 @@ Refering to the caption below, we have in our project  four support modules:
    * Before each test, group tests by matching test type value
 3) `envconfig.js` contains all the URLs for each service available in BOM2, depending on the test environment.
 4) `excelUtility.js` It is a module used to read Excel files and return their content.
+</details>
 
 <details>
 <summary>Running</summary>
