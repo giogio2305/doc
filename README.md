@@ -110,10 +110,13 @@ Refering to the caption below, we have in our project  four support modules:
 3) `envconfig.js` contains all the URLs for each service available in BOM2, depending on the test environment.
 4) `excelUtility.js` It is a module used to read Excel files and return their content.
 
+<details>
+<summary>Running</summary>
+   
 ## Running
-{collapsible="true" default-state="collapsed"}
 
 Here we could run the tests in two different ways: in a **_console_** or in a **_browser interface_**
+
 ### Console
 To run a suite of e2e tests in console just run `npx cypress run --spec cypress/e2e/tests/suite_name`
 
@@ -143,6 +146,7 @@ We have the test runner interface with annotations displayed here.
 8) **Run/Stop button:** used to run tests or stop them while they are in progress.
 9) **Identifier targeter:** used to directly target identifiers on the web page with Cypress
 10) **Screen size:** displays the current size of the test interface and is primarily used for responsive test cases.
+</details>
 
 <details>
 <summary>Reporting</summary>
@@ -154,8 +158,11 @@ In Cypress, reporting is an essential feature that enhances test visibility and 
 Additionally, Cypress can be integrated with Allure Reports, a popular reporting tool that provides a more detailed and visually appealing representation of test results. To use Allure with Cypress, we typically need to install specific plugins and configure them in our project [more here](#internal-docs). Once set up, Allure generates comprehensive reports that include test status, execution times, and detailed logs, along with screenshots and videos. This integration helps us analyze test outcomes more effectively and track regression over time, making it easier to maintain high-quality software. In our case, we use an [Allure server](https://allure-ui.dev.maviance.info/allure-docker-service-ui/projects/bom2-uat) linked to the Jenkins pipeline, allowing tests to run daily at a specific hour. To execute these tests, Allure's base test configuration relies on test tags (e.g., `<smoke>`, `<regression>`) and the test environment (Integration, Acceptance).
 ![allure](https://github.com/user-attachments/assets/edd04d93-900c-4eff-bbec-3c98dfc7c866)
 </details>
+
+<details>
+<summary>Documentation</summary>
+   
 ## Documentation
-{collapsible="true" default-state="collapsed"}
 
 ### Internal docs
 [Automated E2E Tests for BOM2](https://maviance.atlassian.net/wiki/spaces/MD/pages/3072098320/Automated+E2E+Tests+for+BOM+2) \
@@ -164,4 +171,5 @@ Additionally, Cypress can be integrated with Allure Reports, a popular reporting
 ### External docs
 [Cypress Documentation](https://docs.cypress.io/guides/overview/why-cypress) \
 [Cypress test writing and organizing](https://docs.cypress.io/guides/core-concepts/writing-and-organizing-tests)
+</details>
 
