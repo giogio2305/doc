@@ -146,7 +146,9 @@ We have the test runner interface with annotations displayed here.
 
 <details>
 <summary>Reporting</summary>
+   
 ## Reporting
+
 In Cypress, reporting is an essential feature that enhances test visibility and debugging capabilities. Cypress automatically captures screenshots of failed tests, which can be invaluable for diagnosing issues. By default, a screenshot is taken whenever a test fails, allowing developers to see the application state at the time of the failure. This feature can be customized through the configuration file to adjust when screenshots are taken.
 
 Additionally, Cypress can be integrated with Allure Reports, a popular reporting tool that provides a more detailed and visually appealing representation of test results. To use Allure with Cypress, we typically need to install specific plugins and configure them in our project [more here](#internal-docs). Once set up, Allure generates comprehensive reports that include test status, execution times, and detailed logs, along with screenshots and videos. This integration helps us analyze test outcomes more effectively and track regression over time, making it easier to maintain high-quality software. In our case, we use an [Allure server](https://allure-ui.dev.maviance.info/allure-docker-service-ui/projects/bom2-uat) linked to the Jenkins pipeline, allowing tests to run daily at a specific hour. To execute these tests, Allure's base test configuration relies on test tags (e.g., `<smoke>`, `<regression>`) and the test environment (Integration, Acceptance).
