@@ -10,20 +10,20 @@ The Back Office Management 2 User Acceptance Tests (BOM 2 UATs) act as a reposit
 
 ### Prerequisites
 To run our uats we need to install several tools depending on our OS:
-1)   **Node.js**: as a runtime environemment for running cypress localy
+1)   **Node.js**: as a runtime environment for running Cypress locally
 2)  **VS code**: as our code editor.
-3) **Git**: for code versionning and git operations.
-4) **Web browser**: sucha as chrome or firefox (optionnal, cypress own is own  lite weight web browser Electron).
+3) **Git**: for code versioning and git operations.
+4) **Web browser**: such as Chrome or Firefox (optional, cypress owns its own  lightweight web browser Electron).
 
 ### Steps
 1) Clone the repository from Bitbucket (in the develop branch) [Here](https://bitbucket.org/maviance-development/bom2_uat/src/develop/)
 2) Checkout a new branch with `git checkout -b <branch name>`
 3) Pull the latest version of the code with `git pull origin develop`
-4) Install all the dependencies with in the bom2_uat directory with `npm install`
+4) Install all the dependencies within the bom2_uat directory with `npm install`
 5) Verify that everything is functioning correctly by opening Cypress with the command `npx cypress open`. 
 6) Ensure that windows similar to the one shown in the image below appear.
 
-![as](https://github.com/user-attachments/assets/ccc38d0e-47a3-4597-be61-e606df30009e")
+![as]("https://github.com/user-attachments/assets/ccc38d0e-47a3-4597-be61-e606df30009e")
 
 </details>
 
@@ -38,7 +38,7 @@ To simplify the test automation phase, we have established common actions to ass
 
 1) `CommonActions.js` is a JavaScript class that provides a wide range of reusable functions for interacting with web elements and performing common actions in our E2E testing, along with utility functions for data manipulation.
 2) `CommonServices.js` is a JavaScript class that includes a method for generating an access token using the provided username, password, and grant type to authenticate properly on the BOM2 platform.
-3) `HttpActions.js` this class provides methods for sending HTTP requests (GET, POST, PUT, PATCH, DELETE) and asserting their responses in tests. Each method requires the endpoint URL, optional headers, and request data for certain request types. It utilizes Cypress's cy.request() to send requests and asserts the response status code, returning the response object for further processing. These methods are essential for making HTTP requests and verifying responses in end-to-end tests, ensuring data integrity.
+3) `HttpActions.js` This class provides methods for sending HTTP requests (GET, POST, PUT, PATCH, DELETE) and asserting their responses in tests. Each method requires the endpoint URL, optional headers, and request data for certain request types. It utilizes Cypress's cy.request() to send requests and asserts the response status code, returning the response object for further processing. These methods are essential for making HTTP requests and verifying responses in end-to-end tests, ensuring data integrity.
 
 </details>
 
@@ -52,7 +52,7 @@ Here, we will explore how to set up test automation code with Cypress for end-to
 ![setup](https://github.com/user-attachments/assets/8e9cb827-b045-495e-af98-e483795517fc)
 
 In the picture above, we see that to create a test suite, we need to create a new directory in the `e2e/tests` directory with the name of the test suite. Inside this directory, we can create a test file that should always end with the `.cy.js` extension. 
-To write test here we have several steps to follow:
+To write the test here we have several steps to follow:
 ### Describe
 is a function in the testing framework that is used to group
 and organize test cases related to the feature of the application that we are testing. Inside this function, you
@@ -70,7 +70,7 @@ cases within the `describe` block are executed. In our case, we use it to load o
 
 ### `it` Block
 The `it()` function is used to define an individual test case and is typically placed inside a `describe()` block, which groups related tests together. Each `it()` block runs in isolation, ensuring that the application state is reset between tests, so they do not affect one another. Using multiple `it()` blocks enhances readability and maintainability by focusing on one functionality or scenario at a time. \
-In our case, one or more it() blocks can refer to the acceptance criteria of an user story.
+In our case, one or more it() blocks can refer to the acceptance criteria of a user story.
 
 ![it](https://github.com/user-attachments/assets/0c667438-c1e2-43d5-a2bd-efd30815d495)
 
@@ -78,10 +78,10 @@ In our case, one or more it() blocks can refer to the acceptance criteria of an 
 In Cypress, `it.skip()` is used to temporarily skip a specific test case without removing it from the codebase. This is particularly useful during development or debugging when you want to focus on other tests without executing a particular one.This feature helps maintain test organization and can be beneficial when dealing with flaky tests or when a feature is under development.
 
 ### `it.only()`
-In Cypress, `it.only()` is used to run a specific test case while skipping all other tests in the suite. This is particularly helpful during development or debugging when you want to focus on a single test without executing the entire test suite.This feature is useful for ensuring that you can quickly iterate on a single test without the distraction of other tests running simultaneously.
+In Cypress, `it.only()` is used to run a specific test case while skipping all other tests in the suite. This is particularly helpful during development or debugging when you want to focus on a single test without executing the entire test suite. This feature is useful for ensuring that you can quickly iterate on a single test without the distraction of other tests running simultaneously.
 
 ### `beforeEach()` and `afterEach()`
-In Cypress, `beforeEach()` and `afterEach()` are used to set up and tear down conditions for tests within a `describe()` block. The `beforeEach()` function runs before each individual test case defined by `it()`, allowing you to set up common prerequisites, such as navigating to a specific page or resetting application state. Conversely, `afterEach()` runs after each test case, which is useful for cleaning up or resetting any changes made during the test.
+In Cypress, `beforeEach()` and `afterEach()` are used to set up and tear down conditions for tests within a `describe()` block. The `beforeEach()` function runs before each test case defined by `it()`, allowing you to set up common prerequisites, such as navigating to a specific page or resetting the application state. Conversely, `afterEach()` runs after each test case, which is useful for cleaning up or resetting any changes made during the test.
 
 ### Tags
 In Cypress, test tags are used to categorize and organize tests based on their purpose and scope. in our project we have three main tags: `<smoke>`, `<sanity>`, and `<regression>`:
@@ -112,8 +112,8 @@ This folder contains classes for the web pages being tested. Each class includes
 
 ![pages](https://github.com/user-attachments/assets/800e8626-733e-4ef5-92c0-5d90915525c2)
 
-1) **in Red** we have different pages (classes) along with their identifiers and methods
-2) **in Yellow** we have the structure of a << page >> with identifiers organized by page section.
+1) **In Red** we have different pages (classes) along with their identifiers and methods
+2) **In Yellow** we have the structure of a << page >> with identifiers organized by page section.
 3) Below is the structure of an action method for a page, which clicks on the profile icon on the home page. \
    
    ![action](https://github.com/user-attachments/assets/02b5c7b8-9f42-4550-a7e9-0a48ef894bd3)
@@ -129,9 +129,9 @@ It provides a variety of useful modules for common test actions, such as adjusti
 
 ![support](https://github.com/user-attachments/assets/19a1cdc8-d29b-4e06-8a29-d15d29fdb1d8)
 
-Refering to the caption below, we have in our project  four support modules:
+Referring to the caption below, we have in our project  four support modules:
 
-1) `command.js` is defining custom Cypress commands for a test automation script, such as: 
+1) `command.js` defines custom Cypress commands for a test automation script, such as: 
    * Read the JSON file to pass test data in a test;
    * Login to the application based on the user role
    * Logout user from the application
@@ -139,12 +139,12 @@ Refering to the caption below, we have in our project  four support modules:
    * Set the default command timeout
    * Set the default viewport size
    * Disable screenshots during test runs
-   * Before running any tests, read users data and store in Cypress env variable userData for later use.
+   * Before running any tests, read users' data and store it in Cypress env variable user data for later use.
    * Before running any tests, read service endpoints data and store in Cypress env variable endpoints for later use.
    * Before running any tests, store environment config info in Cypress env variable env_config for later use.
    * Before each test, group tests by matching test type value
 3) `envconfig.js` contains all the URLs for each service available in BOM2, depending on the test environment.
-4) `excelUtility.js` It is a module used to read Excel files and return their content.
+4) `excelUtility.js` is a module used to read Excel files and return their content.
 </details>
 
 <details>
@@ -164,8 +164,8 @@ to run a specific test in a suite, run `npx cypress run --spec cypress/e2e/tests
 Running tests in the console will perform end-to-end (E2E) testing of the specified tests in a browser and display results in screenshots in the event of failing tests, without opening any specific windows.
 
 ### Browser interface
-To run our test in browser interface, we should first of all open cypress interface by running `npx cypress open` \
-then on the interface select **E2E Testing**, after that select the browser in wich you want to perform your e2e tests like in the picture below. 
+To run our test in the browser interface, we should first open the cypress interface by running `npx cypress open` \
+then on the interface select **E2E Testing**, and select the browser in which you want to perform your e2e tests as in the picture below. 
 
 ![run](https://github.com/user-attachments/assets/6869c50f-ab48-482e-aedd-a950f60f2a68)
 
@@ -177,13 +177,13 @@ We have the test runner interface with annotations displayed here.
 
 ![annotate](https://github.com/user-attachments/assets/3fa8b41f-5019-42e1-b00f-02335683442d)
 
-1) **Test Specs:** we can see the test suites and their corresponding test files here.
-2) **Tests cases:** here, we have the different test cases along with their statuses after running the automated tests.
-3) **Realtime testing interface:** it displays in real-time how the test is progressing.
-4) **Spec file:** we have the test specification file that is currently running, along with the remaining time for the test to complete.
-5) **Passed Tests:** this section contains the number of tests that have passed.
-6) **Failed Tests:** this section contains the number of tests that have failed.
-7) **Skipped Tests:** this section displays the number of tests that have been skipped.
+1) **Test Specs:** We can see the test suites and their corresponding test files here.
+2) **Tests cases:** Here, we have the different test cases along with their statuses after running the automated tests.
+3) **Realtime testing interface:** It displays in real time how the test is progressing.
+4) **Spec file:** We have the test specification file that is currently running, along with the remaining time for the test to complete.
+5) **Passed Tests:** This section contains the number of tests that have passed.
+6) **Failed Tests:** This section contains the number of tests that have failed.
+7) **Skipped Tests:** This section displays the number of tests that have been skipped.
 8) **Run/Stop button:** used to run tests or stop them while they are in progress.
 9) **Identifier targeter:** used to directly target identifiers on the web page with Cypress
 10) **Screen size:** displays the current size of the test interface and is primarily used for responsive test cases.
