@@ -114,7 +114,7 @@ This folder contains classes for the web pages being tested. Each class includes
 ## Support
 
 It provides a variety of useful modules for common test actions, such as adjusting the viewport, changing the test environment, and logging into BOM 2 based on the user role, among others.
-<img alt="support" height="240" src="https://github.com/user-attachments/assets/19a1cdc8-d29b-4e06-8a29-d15d29fdb1d8" width="240"/>
+![support](https://github.com/user-attachments/assets/19a1cdc8-d29b-4e06-8a29-d15d29fdb1d8)
 Refering to the caption below, we have in our project  four support modules:
 
 1) `command.js` is defining custom Cypress commands for a test automation script, such as: 
@@ -143,7 +143,7 @@ Here we could run the tests in two different ways: in a **_console_** or in a **
 ### Console
 To run a suite of e2e tests in console just run `npx cypress run --spec cypress/e2e/tests/suite_name`
 
-   <img alt="console_test" height="520" src="https://github.com/user-attachments/assets/c9cd4e6c-efb3-4930-b821-9f55c98748c9" width="520"/> \
+   ![console](https://github.com/user-attachments/assets/c9cd4e6c-efb3-4930-b821-9f55c98748c9) \
 to run a specific test in a suite, run `npx cypress run --spec cypress/e2e/tests/suite_name/test_file_name.cy.js`    
 
 Running tests in the console will perform end-to-end (E2E) testing of the specified tests in a browser and display results in screenshots in the event of failing tests, without opening any specific windows.
@@ -154,7 +154,7 @@ then on the interface select **E2E Testing**, after that select the browser in w
 <img alt="broswer" height="https://github.com/user-attachments/assets/6869c50f-ab48-482e-aedd-a950f60f2a68" width="520"/> \
 Then, begin the end-to-end (E2E) testing by selecting the specifications in which you want to conduct your tests.
 
-<img alt="spec" height="520" src="https://github.com/user-attachments/assets/6869c50f-ab48-482e-aedd-a950f60f2a68" width="520"/> \
+![test](https://github.com/user-attachments/assets/86136595-4458-43ff-95a7-873e1f781d84) \
 We have the test runner interface with annotations displayed here.
 
 ![annotate](https://github.com/user-attachments/assets/3fa8b41f-5019-42e1-b00f-02335683442d)
